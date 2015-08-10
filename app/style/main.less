@@ -1,0 +1,13 @@
+@color-primary: red;
+
+* {
+  font-family: helvetica, sans-serif;
+}
+
+a {
+  color: @color-primary;
+
+  &:hover {
+    color: lighten(@color-primary, 30%);
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "broccoli-play",
+  "version": "0.0.0",
+  "description": "Playing with Broccoli.js",
+  "main": "app.js",
+  "devDependencies": {
+    "broccoli": "^0.16.5",
+    "broccoli-babel-transpiler": "^5.4.2",
+    "broccoli-browser-sync": "^1.0.0",
+    "broccoli-fast-browserify": "^0.2.7",
+    "broccoli-funnel": "^0.2.6",
+    "broccoli-less-single": "^0.4.0",
+    "broccoli-merge-trees": "^0.2.2",
+    "broccoli-source-map": "^0.2.3",
+    "browser-sync": "^2.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cody Jenkins <cjenkins@dius.com.au>",
+  "license": "MIT"
+}
