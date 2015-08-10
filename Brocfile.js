@@ -17,7 +17,7 @@ jsTree = babelTranspiler(jsTree);
 // Browserify
 jsTree = browserify(jsTree, {
   bundles: {
-    'dist/app.js': { entryPoints: ['app.js'] }
+    'js/app.js': { entryPoints: ['app.js'] }
   }
 });
 
@@ -29,11 +29,11 @@ jsTree = sourceMap.extract(jsTree);
 var cssTree = 'app/style';
 
 // Compile LESS
-cssTree = less(cssTree, 'main.less', 'dist/main.css');
+cssTree = less(cssTree, 'main.less', 'css/main.css');
 
 /// - HTML ---------------------------------------------------------------------
 
-var htmlTree = pickFiles('app/html', { destDir: '/public' });
+var htmlTree = pickFiles('app/html', { destDir: 'html' });
 
 /// - BrowserSync --------------------------------------------------------------
 
